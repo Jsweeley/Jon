@@ -1,0 +1,35 @@
+import javax.swing.JOptionPane;
+public class jon {
+
+	public static void main(String[] args){
+		boolean run = true;
+		while(run){
+			String Answer = JOptionPane.showInputDialog("Jon sucks eggs?", "Yes or no?");
+			if(Answer.equals("yes" )){
+				
+					JOptionPane.showMessageDialog(null, "Damn straight");
+					break;
+				}
+			if(Answer.equals("Yes")){
+				JOptionPane.showMessageDialog(null, "Damn straight");
+				break;
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Lies!");
+			}
+
+			int lies = JOptionPane.showConfirmDialog(null, "Will you tell the truth?", null, JOptionPane.YES_NO_OPTION);
+
+			if (lies == JOptionPane.YES_OPTION){
+
+				run = true;
+			}
+
+			else{
+				JOptionPane.showMessageDialog(null, "YES YOU WILL");
+				run = true;
+
+			}
+		}
+	}
+}
